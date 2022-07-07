@@ -1,0 +1,523 @@
+/* COLORS 
+#FFFFFF
+#F16718
+#FF9B62
+#162542
+#7B8BAD
+#E8EFF2
+TYPOGRAPHY 
+font-family: "Barlow";
+*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: rgb(244, 247, 247);
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden !important;
+  margin: 0 auto;
+}
+/* GENERALS */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading-primary,
+.heading-secondary,
+.feature-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #162542;
+}
+.text {
+  color: #7b8bad;
+  font-weight: 500;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.release-date {
+  text-transform: uppercase;
+}
+.icon-box {
+  background: #f16718;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+}
+/* buttons for mobile*/
+.btn {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+/*********************** HEADER ******************/
+.heading-secondary {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+.text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.header {
+  width: 100%;
+  padding: 0rem 2.5rem 0rem 2.4rem;
+  margin-bottom: 7.5rem;
+}
+
+.btn--header {
+  background-color: #e8eff2;
+  color: #162542;
+  padding: 1.1rem 1.5rem 1.1rem 1.4rem;
+  margin-top: 2.3rem;
+}
+.logo {
+  margin-top: 2.7rem;
+}
+
+/***********************  SECTION HERO ******************/
+
+.hero-description {
+  max-width: 32.7rem;
+}
+.btn--hero {
+  background-color: #f16718;
+  color: #ffffff;
+  padding: 1.1rem 1.4rem 1.1rem 1.4rem;
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 0;
+}
+.hero-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.2rem;
+  margin-bottom: 2.5rem;
+}
+.section-hero {
+  position: relative;
+  padding-left: 2.4rem;
+}
+.hero-img-box {
+  height: 33rem;
+  width: 37.5rem;
+  overflow: hidden;
+
+  margin-right: 0;
+  background-image: url(assets/mobile/image-keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: 99.2vw 88.27vw;
+  background-position: top -3rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.hero-image {
+  display: none;
+}
+.product-images {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.4rem;
+  overflow: hidden;
+  margin-bottom: 5.9rem;
+  justify-content: space-between;
+}
+
+.product1-img-box {
+  width: 12.9rem;
+  height: 19.3rem;
+
+  background-image: linear-gradient(#f16818c9, #f16818bb),
+    url(./assets/mobile/image-phone-and-keyboard.jpg);
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  border-radius: 2rem;
+  margin-left: -1.7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.product2-img-box {
+  height: 19.3rem;
+  width: 22rem;
+  border-radius: 2rem;
+  background-image: url(./assets/mobile/image-glass-and-keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin-right: 2.4rem;
+}
+.product-text-box {
+  padding: 0 2.4rem 0 2.4rem;
+}
+
+.features-container {
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9.6rem;
+}
+.feature {
+  max-width: 32.7rem;
+}
+.feature-title {
+  color: #162542;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  max-width: 32.7rem;
+}
+.feature-text {
+  text-align: center;
+}
+.product-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.4rem;
+  margin-bottom: 11.1rem;
+}
+.footer {
+  padding-left: 5.1rem;
+  padding-right: 5.2rem;
+  padding-bottom: 5rem;
+}
+/* more than 768PX (for tablet )*/
+@media (min-width: 48em) {
+  .section-hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .heading-primary {
+    width: 22rem;
+  }
+  .hero-description {
+    max-width: 33.9rem;
+  }
+  .btn--hero,
+  .btn--header {
+    padding: 1.6rem 1.7rem 1.6rem 2.6rem;
+  }
+  .header {
+    padding: 0rem 4rem 0rem 3.9rem;
+    margin-bottom: 6.2rem;
+  }
+  .btn--header {
+    margin-top: 4rem;
+  }
+  .logo {
+    margin-top: 4.9rem;
+  }
+  .section-hero {
+    padding-left: 3.9rem;
+    position: relative;
+  }
+  .hero-text-box {
+    gap: 3.9rem;
+    padding: 0;
+  }
+  .hero-btn-container {
+    gap: 3.7rem;
+    margin-bottom: 10rem;
+  }
+
+  .hero-img-box {
+    background-image: none;
+    height: 42.5rem;
+    width: 47.8rem;
+  }
+  .hero-image {
+    position: absolute;
+    max-height: 42.5rem;
+    max-width: 47.8rem;
+    border-radius: 2rem;
+    right: -15.7rem;
+    /* top: 16rem; */
+    /* transform: translateY(-50%); */
+    overflow-x: hidden;
+    display: inline-block;
+  }
+  .product-images {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    overflow: hidden;
+  }
+  .product1-img-box {
+    height: 32rem;
+    width: 21.4rem;
+
+    background-image: linear-gradient(#f16718),
+      url(./assets/tablet/image-phone-and-keyboard.jpg);
+    border-radius: 2rem;
+    margin-left: 3.9rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .product2-img-box {
+    height: 32rem;
+    width: 44.5rem;
+    border-radius: 2rem;
+    background-image: url(./assets/tablet/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 4rem;
+  }
+  .product-text-box {
+    padding: 0 4rem 0 3.9rem;
+  }
+
+  .features-container {
+    padding: 0 4rem 0 3.9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 6.9rem;
+    row-gap: 7.2rem;
+    margin-bottom: 14.2rem;
+    align-items: center;
+  }
+  .feature {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .feature-title,
+  .feature-text {
+    text-align: left;
+  }
+  .product-text-box {
+    padding: 0rem 4rem 0rem 3.9rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 14.2rem;
+  }
+  .heading-secondary {
+    text-align: left;
+  }
+  .product-description {
+    width: 39.8rem;
+  }
+  .footer {
+    padding-left: 24.7rem;
+    padding-right: 24.9rem;
+    padding-bottom: 4.3rem;
+  }
+}
+/* more than 1440PX (for desktop )*/
+@media (min-width: 90em) {
+  body {
+    overflow-x: hidden;
+    width: 144rem;
+    position: relative;
+  }
+  .section-hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .edge-container {
+    background-color: #e8eff2;
+    border-radius: 2rem;
+  }
+  .edge-container-right {
+    width: 25.5rem;
+    height: 24rem;
+    position: absolute;
+    right: -12rem;
+    top: 19.6rem;
+  }
+
+  .heading-primary {
+    width: 44.5rem;
+    font-size: 5.6;
+    line-height: 5.6rem;
+  }
+  .hero-description {
+    max-width: 44.5rem;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding: 0 16.5rem 0 16.5rem;
+  }
+  .btn--header {
+    margin-top: 5.5rem;
+  }
+  .logo {
+    margin-top: 6.4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .section-hero {
+    padding-left: 16.5rem;
+    position: relative;
+  }
+  .hero-text-box {
+    gap: 2.4rem;
+    padding: 0;
+    margin-top: 25.6rem;
+  }
+  .hero-btn-container {
+    gap: 4rem;
+    margin-bottom: 13.8rem;
+  }
+
+  .hero-img-box {
+    width: 54rem;
+    height: 48rem;
+    background-image: url(assets/desktop/image-keyboard.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    margin-left: 12.5rem;
+    margin-top: 19.6rem;
+    margin-right: 3rem;
+  }
+  .hero-image {
+    display: none;
+  }
+  .product-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .products {
+    position: relative;
+  }
+  .edge-container-left {
+    width: 25.5rem;
+    height: 24rem;
+    position: absolute;
+    left: -15rem;
+    transform: translateY(100%);
+    margin-left: 3rem;
+  }
+  .product1-img-box {
+    height: 48rem;
+    width: 25.5rem;
+
+    background: rgba(241, 104, 24),
+      url(./assets/desktop/image-phone-and-keyboard.jpg);
+    mix-blend-mode: multiply;
+    opacity: 74.86%;
+    border-radius: 2rem;
+    margin-left: 16.5rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .product2-img-box {
+    height: 48rem;
+    width: 44.5rem;
+    border-radius: 2rem;
+    background-image: url(./assets/desktop/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 12.5rem;
+  }
+
+  .features-container {
+    padding: 0 16.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    column-gap: 6.9rem;
+    row-gap: 7.2rem;
+    margin-bottom: 14.2rem;
+    align-items: flex-start;
+  }
+  .feature {
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 28.1rem;
+  }
+
+  .feature-title,
+  .feature-text {
+    text-align: left;
+  }
+  .product-text-box {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 16.5rem;
+  }
+
+  .product-description {
+    width: 25.5rem;
+  }
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    padding-left: 56.8rem;
+    padding-right: 60rem;
+    padding-bottom: 3.9rem;
+  }
+  .btn--header:hover {
+    background-color: #162542;
+    color: #ffffff;
+  }
+  .btn--hero:hover {
+    background-color: #ff9b62;
+  }
+}
